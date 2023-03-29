@@ -1,0 +1,141 @@
+.fondoMenu{
+    background-color:#b13fff;
+
+}
+
+.textoBlanco{
+    color: white;
+}
+
+.textoNegro{
+    color: rgb(0, 0, 0);
+}
+
+
+ul{
+
+    list-style-type: none; /* eliminamos viñetas de la lista */ 
+    margin:0px;
+    padding:0px;
+    overflow: hidden; /* controlamos que otras cajas no se superpongan al menú o a la lista */
+
+}
+
+
+li{
+
+    float: right; /* flotamos las opciones del menú a la izquierda */ 
+
+}
+
+li a{
+
+    display:block;
+    padding:8px;
+    text-decoration: none; /* eliminamos el subrayado de los enlaces */
+    font-size: 12pt; /* pt de puntos, medida de la fuente */ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;; /* tipo de fuente */
+    margin-left:30px;
+    color: rgb(255, 255, 255); /* color de la letra */
+
+}
+
+
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: #fff;
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .footer .credits a {
+    color: #fff;
+  }
+
+  .video-box{
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 100px auto 0;
+  }
+
+  .video video{
+      width: 100%;
+      height: auto;
+  }
