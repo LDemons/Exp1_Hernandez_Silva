@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/decoracion.css">
     <link rel="icon" type="image/x-icon" href="img/paw_print_animal_icon_141148.png">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Pedo Stode - Productos</title>
+    <script src="js/funciones.js"></script>
 </head>
 <body>
     <!-- menú de navegación-->
@@ -81,95 +83,47 @@
     </nav> <!-- cierre de menú -->
 
     <br>
-    
-    <h1 style="text-align:center">Articulos</h1>
 
-    <br>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/Alimento-Seco-Para-Perros-Cachorros-3-kg.webp" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Alimento perro cachorro 3 kg</h3>
-                        <p class="card-text"> $10,000 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
+    <div class="container">
+        <h2>Calculadora</h2>
 
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/Alimento-perro-cachorro-carne-pollo-y-leche-3-kg.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Champion Dog Alimento cachorro 3 kg </h3>
-                        <p class="card-text"> $9,990 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
+        <p> como algunas personas necesitan una calculadora para comprar les dejamos una que hemos creado, a la hora de crearlo hemos 
+                pensado que sea utilizado para las cotizaciones de productos, para calcular cuanto ganan por un descuento, o por si quieren simplemente
+                calcular algo del momento, para lo que deseen. </p>
 
-            
+        <img src="img/paw_print_animal_icon_141148.png" class="container" style="text-align:center; width: 100px; ">
 
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/Alimento-gato-adulto-carne-1-kg.webp" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Whiskas Alimento gato adulto carne 1 kg</h3>
-                        <p class="card-text"> $4,499 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
-        </div>
+        <br>
+
+        <form name="datos" method="post"><br>
+
+            <div class="form-group">
+                <label for="num1">Digite un número: </label>
+                <input type="number" id="num1" name="num1" required placeholder="Digite un número"
+                        class="form-control">
+            </div><br>
+
+            <div class="form-group">
+                <label for="num2">Digite otro número: </label>
+                <input type="number" id="num2" name="num2" required placeholder="Digite un número"
+                        class="form-control">
+            </div><br>
+
+            <div class="form-group">
+                <input type="button" value="Sumar dos números" id="sumar" class="btn btn-success">
+                <input type="button" value="Restar dos números" id="restar" class="btn btn-warning">
+                <input type="button" value="Multiplicar dos números" id="multiplicar" class="btn btn-danger">
+                <input type="button" value="Dividir dos números" id="dividir" class="btn btn-primary">
+            </div><br>
+
+            <div class="form-group">
+                <label for="resultado">Resultado: </label>
+                <input type="number" id="resultado" name="resultado" class="form-control">
+            </div><br>
+        </form>
+
     </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/Alimento-gato-esterilizado-1-kg.webp" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Cat Chow Alimento gato Esterilizado 1 kg</h3>
-                        <p class="card-text"> $6,190 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/Cama-Pet-Magnific-ambientada.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Cama Magnific para Mascotas</h3>
-                        <p class="card-text"> $15,000 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-xl-4">
-                <div class="card">
-                    <img src="img/gsc_113716209_739911_1.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Collar Lazer Brite Animal Print Gato</h3>
-                        <p class="card-text"> $6,990 CLP</p>
-                        <a href="#" class="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
 
 
     <br>
@@ -241,7 +195,3 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-
-    
-</body>
-</html>
